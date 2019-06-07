@@ -1,17 +1,25 @@
 /* insert scroll snap */
+body {
+  padding: 0;
+  margin: 0;
+}
 
-
-.nav {
+#nav {
   background-image:  linear-gradient(rgb(241, 250, 251), white);
   height: 50px; /* You must set a specified height */
-  width: 135%;
+  width: 100vw;
   padding: 0;
   margin: 0;
   text-align: right;
 }
 
-.nav h1{
+#nav h1{
   text-align: right;
+}
+
+#NavImg {
+  width: 25%;
+  height: 25%;
 }
 
 #menubutton {
@@ -29,20 +37,6 @@
   margin-left: 20px;
 }
 
-.nav-item {
-  background-color: white;
-  color: grey;
-  text-align: center;
-}
-
-.navbar-toggler {
-  color: black;
-}
-
-.navbar-toggler-icon {
-  background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
-}
-
 .IntroPic {
   min-width: 100vw;
   width: 100%;
@@ -54,15 +48,15 @@
   position: relative;
 }
 
-.text {
+.textback {
   position: absolute;
   color: white;
   bottom: 0px;
   right: -10vw;
-  top: 8vh;
-  padding: 0px 0px 0px 0px;
+  top: 4vh;
+  padding: 20px 10px 20px 10px;
   background-color: rgba(26,26,26,0.5);
-  height: 100vh;
+  height: 200vh;
   width: 35%;
 }
 

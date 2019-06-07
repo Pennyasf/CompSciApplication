@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css\bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="google fonts link here" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title> Anna Penny </title>
   </head>
   <body>
     <div class="container">
-      <div class="nav" class="row">
+      <div class="row" id="nav">
         <div class="col-sm-1">
           <img class="Logos" src="Pictures\gmail.png" alt="">
           <img class="Logos" src="Pictures\googleplus.jpg" alt="">
@@ -21,78 +23,69 @@
           <h1 id="MainHeader">ANNA</h1>
         </div>
         <div class="col-sm-2">
-
-          <!--Navbar-->
-          <nav class="navbar navbar-light ">
-            <!-- Navbar brand -->
-            <a class="navbar-brand" href=""></a>
-            <!-- Collapse button -->
-            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#Menudropdown"
-              aria-controls="Menudropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="Menudropdown">
-              <!-- Links -->
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Who Am I? <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Activities.html">What have I <br>been up to?</a>
-                </li>
-              </ul>
-              <!-- Links -->
+          <div class="w3-container">
+            <div class="w3-dropdown-hover w3-mobile">
+              <button class="w3-button"><img id="NavImg" src="https://mdbootstrap.com/img/svg/hamburger6.svg?color=000" alt=""> <i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                <a href="index.html" class="w3-bar-item w3-button w3-mobile">Who am I?</a>
+                <a href="Activities.html" class="w3-bar-item w3-button w3-mobile">What have I <br> been up to?</a>
+              </div>
             </div>
-            <!-- Collapsible content -->
-          </nav>
-          <!--/.Navbar-->
-
+          </div>
         </div>
       </div>
 
 <!-- introduction/ first picture -->
       <div class="row">
-        <div class="introduction">
-          <img class="IntroPic" src="Pictures\WidePic.jpg" alt="">
-        </div>
-        <div class="text">
-          <h2>Hello! My Name, <span><i> in case you haven't already guessed </i></span>, is Anna.</h2>
-          <p>Thank you for visitng my website, I intend to convince you that I am an ideal candidate to join the Computer Science departmet as a student, year commencing 2019/20.</p>
+        <div class="col">
+          <div class="introduction">
+            <img class="IntroPic" src="Pictures\WidePic.jpg" alt="">
+          </div>
+          <div class="textback">
+            <div class="text">
+              <h2> Hello! My Name, <span><i> in case you haven't already guessed</i></span>, is Anna.</h2>
+              <p>Thank you for visitng my website, I intend to convince you that I am an ideal candidate to join the Computer Science departmet as a student, year commencing 2019/20.</p>
+            </div>
+          </div>
         </div>
       </div>
 
 <!-- Activities link/ second lot of pictures -->
       <div class="row">
-        <div id="carousel">
-        <!-- carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active" class="carouselbackground">
-              <p class="SlidePic"><img class="d-block w-100" src="Pictures\RaspPiComp.png" alt="First slide">
-              </p>
+        <div class="col">
+          <div id="carousel">
+          <!-- carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" class="carouselbackground">
+                <p class="SlidePic"><img class="d-block w-100" src="Pictures\RaspPiComp.png" alt="First slide">
+                </p>
+              </div>
+              <div class="carousel-item" class="carouselbackground">
+                <p class="SlidePic"> <img class="d-block w-100" src="Pictures\CodeFirstGirls.png" alt="Second slide">
+                </p>
+              </div>
+              <div class="carouseltitle">
+                <h2 class="header">Wondering what I've been up to?</h2>
+                <p class="carouseltext">I've been up to a lot over the past few years, click me and find out what.</p>
+              </div>
             </div>
-            <div class="carousel-item" class="carouselbackground">
-              <p class="SlidePic"> <img class="d-block w-100" src="Pictures\CodeFirstGirls.png" alt="Second slide">
-              </p>
-            </div>
-            <div class="carouseltitle">
-              <h2 class="header">Wondering what I've been up to?</h2>
-              <p class="carouseltext">I've been up to a lot over the past few years, click me and find out what.</p>
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
-      </div>
+        </div>
+
     </div>
         <!--end carousel -->
   </div>
