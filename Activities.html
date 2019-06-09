@@ -1,43 +1,151 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <!--Links to other documents-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css\Anna.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="google fonts link here" rel="stylesheet">
+<head>
+  <!--Links to other documents-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css\Anna.css">
+  <link rel="stylesheet" href="css\bootstrap.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Major+Mono+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title> Anna Peny </title>
+    <title> Anna Penny </title>
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><img src="Pictures\CodeFirstGirls.png" alt=""></a>
-          <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <div class="card card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"><img src="RaspPiComp.png" alt=""></button>
-          <div class="collapse multi-collapse" id="multiCollapseExample2">
-            <div class="card card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Toggle second element</button>
-          <div class="collapse multi-collapse" id="multiCollapseExample3">
-            <div class="card card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-          </div>
-        </div>
 
+<!-- Navbar -->
+      <div class="nav" class="row">
+        <div class="col-sm-2">
+<!-- Dropdown-->
+          <div class="w3-container">
+            <div class="w3-dropdown-hover w3-mobile">
+              <button class="w3-button"><img id="NavImg" src="https://mdbootstrap.com/img/svg/hamburger6.svg?color=000" alt=""> <i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                <a href="index.html" class="w3-bar-item w3-button w3-mobile">Who am I?</a>
+                <a href="Activities.html" class="w3-bar-item w3-button w3-mobile">What have I <br> been up to?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <h1 id="MainHeader2"> <a href="index.html">ANNA</a></h1>
+        </div>
+        <div class="col-sm-1" id="Logo">
+          <a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSBmWzCJDtbCkCTjRNhGvZTJhmCflTgRzgVVQlhRDLJgWfXclHGVJJPvDWzKBmsnpPNSmBSG" target="_blank"><img class="Logos" src="Pictures\gmail.png" alt=""></a>
+          <a href="https://plus.google.com/u/2/108468022976080171728" target="_blank"><img class="Logos" src="Pictures\googleplus.jpg" alt=""></a>
+        </div>
+      </div>
+<!-- Navbar end -->
+
+<!-- Page header -->
+<div class="row">
+  <div class="col">
+    <div class="midset">
+      <h2>So this is what I have been up to...</h2>
+      <p>Anything specifically relevant to the course is on the first row, my general hobbies on the second below, and finally the third contains skills I possess.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Grid display -->
+<!-- First line -->
+      <div class="row" id="line">
+        <div class="col-sm-4">
+          <a class="btn btn-primary" id="btndrop" data-toggle="collapse" href="#CodeFirstGirlsCollapse" role="button" aria-expanded="false" aria-controls="CodeFirstGirlsCollapse"><h2 class="DropHeader">Code First Girls</h2><img class="ActivitiesImg" src="Pictures\CodeFirstGirls.png" alt=""></a>
+          <div class="collapse multi-collapse" id="CodeFirstGirlsCollapse">
+            <div class="card card-body">
+              <p>Description of first activity</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" id="btndrop" data-toggle="collapse" data-target="#RaspPiCompCollapse" aria-expanded="false" aria-controls="RaspPiCompCollapse"><h2 class="DropHeader">Raspberry Pi Club</h2><img src="RaspPiComp.png" alt=""> <img class="ActivitiesImg" src="Pictures\RaspPiComp.png" alt=""></button>
+          <div class="collapse multi-collapse" id="RaspPiCompCollapse">
+            <div class="card card-body">
+              <p>Description of second activity</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" id="btndrop" data-toggle="collapse" data-target="#OtherActivityCollapse" aria-expanded="false" aria-controls="OtherActivityCollapse"><h2 class="DropHeader">Activities at Uni</h2> <img src="" alt=""> </button>
+          <div class="collapse multi-collapse" id="OtherActivityCollapse">
+            <div class="card card-body">
+              <p>Description of third activity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Second line -->
+      <div class="row" id="line">
+        <div class="col-sm-4">
+          <a class="btn btn-primary" id="btndrop" data-toggle="collapse" href="#SportCollapse" role="button" aria-expanded="false" aria-controls="SportCollapse"><h2 class="DropHeader">Sports</h2><img class="ActivitiesImg" src="Pictures\CodeFirstGirls.png" alt=""></a>
+          <div class="collapse multi-collapse" id="SportCollapse">
+            <div class="card card-body">
+              <p>Sports (baseball), hiking</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" id="btndrop" data-toggle="collapse" data-target="#VolunteerCollapse" aria-expanded="false" aria-controls="VolunteerCollapse"><h2 class="DropHeader">Volunteering</h2><img src="RaspPiComp.png" alt=""> <img class="ActivitiesImg" src="Pictures\RaspPiComp.png" alt=""></button>
+          <div class="collapse multi-collapse" id="VolunteerCollapse">
+            <div class="card card-body">
+              <p>Guilford Grange, St Johns</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" id="btndrop" data-toggle="collapse" data-target="#HobbyCollapse" aria-expanded="false" aria-controls="HobbyCollapse"><h2 class="DropHeader">Other Hobbies</h2> <img src="" alt=""> </button>
+          <div class="collapse multi-collapse" id="HobbyCollapse">
+            <div class="card card-body">
+              <p>cooking, baking, knitting, languages, painting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Third line -->
+      <div class="row" id="line">
+        <div class="col-sm-4">
+          <a class="btn btn-primary" id="btndrop" data-toggle="collapse" href="#Skills1Collapse" role="button" aria-expanded="false" aria-controls="Skills1Collapse"><h2 class="DropHeader">Team work and Time keeping</h2><img class="ActivitiesImg" src="Pictures\CodeFirstGirls.png" alt=""></a>
+          <div class="collapse multi-collapse" id="Skills1Collapse">
+            <div class="card card-body">
+              <p>Jobs, lab work, group project</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" id="btndrop" data-toggle="collapse" data-target="#Skills2Collapse" aria-expanded="false" aria-controls="Skills2Collapse"><h2>Creative & Innovative thinking,<br>and Problem Solving</h2><img src="RaspPiComp.png" alt=""> <img class="ActivitiesImg" src="Pictures\RaspPiComp.png" alt=""></button>
+          <div class="collapse multi-collapse" id="Skills2Collapse">
+            <div class="card card-body">
+              <p>Raspberry pi, art</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" id="btndrop" data-toggle="collapse" data-target="#Skills3Collapse" aria-expanded="false" aria-controls="Skills3Collapse"><h2 class="DropHeader">Resilience</h2> <img src="" alt=""> </button>
+          <div class="collapse multi-collapse" id="Skills3Collapse">
+            <div class="card card-body">
+              <p>code first</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>  01001000 01100001 01110110 01100101 00100000 01100001 00100000 01100111 01110010 01100101 01100001 01110100 00100000 01100100 01100001 01111001 00100000 00100001 </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 

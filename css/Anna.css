@@ -1,10 +1,36 @@
 /* insert scroll snap */
 
 
+body {
+  background-image: url("file:///Users/margritchristen/Documents/GitHub/CompSciApplication/Pictures/Magritli.jpg");
+  background-position: center center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(238, 238, 238, 0.81) !important;
+  background-blend-mode: color;
+  margin: 0;
+  padding: 0;
+  padding-right: 200%;
+}
+
+body p  {
+  font-family: 'Indie Flower', cursive;
+}
+
+body h2  {
+  font-family: 'Indie Flower', cursive;
+}
+
+.row  {
+  min-width: 101vw;
+  width: 100%;
+}
+
 .nav {
   background-image:  linear-gradient(rgb(241, 250, 251), white);
   height: 50px; /* You must set a specified height */
-  width: 135%;
+  min-width: 101vw;
+  width: 100%;
   padding: 0;
   margin: 0;
   text-align: right;
@@ -12,6 +38,11 @@
 
 .nav h1{
   text-align: right;
+}
+
+.w3-container {
+text-align: left;
+padding: 0;
 }
 
 #menubutton {
@@ -29,6 +60,11 @@
   margin-left: 20px;
 }
 
+#Logo {
+  padding-right: 50px;
+}
+
+
 .nav-item {
   background-color: white;
   color: grey;
@@ -43,8 +79,20 @@
   background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
 }
 
+#MainHeader {
+  font-family: 'Major Mono Display', monospace;
+  text-align: center;
+  padding-left: 300px;
+}
+
+#MainHeader2 {
+  font-family: 'Major Mono Display', monospace;
+  text-align: center;
+  padding-right: 150px;
+}
+
 .IntroPic {
-  min-width: 100vw;
+  min-width: 101vw;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -59,11 +107,13 @@
   color: white;
   bottom: 0px;
   right: -10vw;
-  top: 8vh;
+  top: 4%;
   padding: 0px 0px 0px 0px;
   background-color: rgba(26,26,26,0.5);
   height: 100vh;
   width: 35%;
+  padding: 40px 20px 40px 20px;
+
 }
 
 /*carousel */
@@ -94,9 +144,10 @@
   height: 200px;
   text-align: center;
 }
+
 .SlidePic{
-  height: 95vh;
   padding: 0;
+  object-fit: cover;
 }
 
 .navbar-toggler-icon {
@@ -108,3 +159,51 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000'
   width: 50px;
   height: 20px;
 }
+
+.ActivitiesImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+  padding: 0px 10px 10px 10px;
+  }
+
+
+.midset {
+  text-align: center;
+  padding: 20px;
+}
+
+
+footer {
+  padding: 50px 10px 50px 10px;
+  text-align: center;
+}
+
+#btndrop {
+  background-color: rgba(250, 250, 250, 0.2);
+  border-style: inset;
+  border-color: rgba(213, 255, 188, 0.5);
+  border-width: thick;
+  padding: 10px 10px 10px 10px;
+}
+
+.DropHeader {
+  padding-top: 17px;
+  padding-bottom: 20px;
+}
+
+#line {
+  padding-bottom: 50px;
+}
+
+/* screen constraints */
+@media (max-width: 500px) {
+  #NavImg {
+    width: 5%;
+    height: 5
+  }
+  #MainHeader {
+    text-align: center;
+    padding-left: 0px;
+  }

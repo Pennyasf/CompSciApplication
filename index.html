@@ -6,48 +6,39 @@
     <link rel="stylesheet" href="css\Anna.css">
     <link rel="stylesheet" href="css\bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="google fonts link here" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <title> Anna Penny </title>
   </head>
   <body>
     <div class="container">
+
+<!-- Navbar -->
       <div class="nav" class="row">
-        <div class="col-sm-1">
-          <img class="Logos" src="Pictures\gmail.png" alt="">
-          <img class="Logos" src="Pictures\googleplus.jpg" alt="">
+        <div class="col-sm-2">
+<!-- Dropdown-->
+          <div class="w3-container">
+            <div class="w3-dropdown-hover w3-mobile">
+              <button class="w3-button"><img id="NavImg" src="https://mdbootstrap.com/img/svg/hamburger6.svg?color=000" alt=""> <i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                <a href="index.html" class="w3-bar-item w3-button w3-mobile">Who am I?</a>
+                <a href="Activities.html" class="w3-bar-item w3-button w3-mobile">What have I <br> been up to?</a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-sm-9">
-          <h1 id="MainHeader">ANNA</h1>
+          <h1 id="MainHeader"> <a href="index.html">ANNA</a></h1>
         </div>
-        <div class="col-sm-2">
-
-          <!--Navbar-->
-          <nav class="navbar navbar-light ">
-            <!-- Navbar brand -->
-            <a class="navbar-brand" href=""></a>
-            <!-- Collapse button -->
-            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#Menudropdown"
-              aria-controls="Menudropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="Menudropdown">
-              <!-- Links -->
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Who Am I? <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Activities.html">What have I <br>been up to?</a>
-                </li>
-              </ul>
-              <!-- Links -->
-            </div>
-            <!-- Collapsible content -->
-          </nav>
-          <!--/.Navbar-->
-
+        <div class="col-sm-1" id="Logo">
+          <a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSBmWzCJDtbCkCTjRNhGvZTJhmCflTgRzgVVQlhRDLJgWfXclHGVJJPvDWzKBmsnpPNSmBSG" target="_blank"><img class="Logos" src="Pictures\gmail.png" alt=""></a>
+          <a href="https://plus.google.com/u/2/108468022976080171728" target="_blank"><img class="Logos" src="Pictures\googleplus.jpg" alt=""></a>
         </div>
       </div>
+<!-- Navbar end -->
 
 <!-- introduction/ first picture -->
       <div class="row">
@@ -78,10 +69,10 @@
               <p class="SlidePic"> <img class="d-block w-100" src="Pictures\CodeFirstGirls.png" alt="Second slide">
               </p>
             </div>
-            <div class="carouseltitle">
+            <a href="Activities.html"><div class="carouseltitle">
               <h2 class="header">Wondering what I've been up to?</h2>
               <p class="carouseltext">I've been up to a lot over the past few years, click me and find out what.</p>
-            </div>
+            </div></a>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -94,20 +85,28 @@
         </div>
       </div>
     </div>
-        <!--end carousel -->
+<!--end carousel -->
+
+
+    <div class="row">
+      <div class="col">
+        <div class="">
+          <h2>So why should I be accepted onto the course?</h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
 
 <!-- footer -->
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-sm-1">
-          </div>
-          <div class="col-sm-10">
-            <p>Have a great day!</p>
-          </div>
-          <div class="col-sm-1">
-            <!-- <img id="the secret meme page" src="PortraitMono.jpg" alt="The meme spot"> -->
+          <div class="col">
+            <p>  01001000 01100001 01110110 01100101 00100000 01100001 00100000 01100111 01110010 01100101 01100001 01110100 00100000 01100100 01100001 01111001 00100000 00100001 </p>
           </div>
         </div>
       </div>
