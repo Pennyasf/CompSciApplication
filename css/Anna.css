@@ -41,6 +41,11 @@
   text-align: right;
 }
 
+#NavImg {
+  width: 20px;
+  height: 20px;
+}
+
 .nav h1{
   text-align: right;
 }
